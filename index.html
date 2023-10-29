@@ -1,0 +1,87 @@
+<!-- Il tuo compito è creare un sito e-commerce per Smartphones. 
+L'homepage che stai per creare sarà la vetrina dei prodotti disponibili, con qualche informazione per ciascun prodotto. 
+Non sono richieste funzionalità di carrello/cassa.
+- Completa gli esercizi dall'1 al 6 SOLAMENTE con HTML
+- Completa gli altri esercizi con JS
+
+//ESERCIZI IN HTML
+
+ESERCIZIO 1: Inserisci un tag h1 con il nome del tuo negozio -->
+<!--ESERCIZIO 2: Aggiungi una tabella con i 5 prodotti più in vista del tuo negozio -->
+<!-- ESERCIZIO 3: Aggiungi per ogni prodotto un'immagine, un titolo, una descrizione e un prezzo -->
+<!-- ESERCIZIO 4: Per ogni elemento della tabella aggiungi un link di Amazon al prodotto esistente -->
+<!-- ESERCIZIO 5: Aggiungi un footer con il nome e l'indirizzo del tuo negozio -->
+<!-- ESERCIZIO 6: Aggiungi un campo testuale in cui l'utente può lasciare un commento su un prodotto (al momento non serve inserire nessuna "vera" funzionalità di POST/salvataggio!) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+    <button onclick="notte()">NIGHT</button>
+    <button onclick="traduzione()">TRADUZIONE NOME NEGOZIO</button>
+    <button onclick="colore()">CAMBIA COLORE PREZZI</button>
+    <button onclick="invisibilità()">NASCONDI</button>
+    <button onclick="link()">LINK</button>
+    
+    <h1>CAR SHOP</h1>
+    <div class="container">
+        <div class="prodotto">
+            <h3>FERRARI</h3>
+            <img src="https://cdn.motor1.com/images/mgl/7xNMo/s3/bulletproof-ferrari-458-speciale-by-addarmor-front-view.jpg">
+            <p>Vettura a benzina,</p>
+            <h4>400.000 €</h4>
+            <a href="#">Visita qui</a>
+            
+        </div>
+        <div class="prodotto">
+            <h3>LAMBORGHINI</h3>
+            <img src="https://apps-cloud.n-tv.de/img/24025865-1680259698000/16-9/750/LB744ORANGE5.jpg">
+            <p>Vettura a benzina,</p>
+            <h4>300.000 €</h4>
+            <a href="#">Visita qui</a>
+            
+        </div>
+        <div class="prodotto">
+            <h3>BUGATTI</h3>
+            <img src="https://cdn.motor1.com/images/mgl/wBNko/s3/no.-48-bugatti-veyron-super-sport-for-sale.jpg">
+            <p>Vettura a benzina,</p>
+            <h4>1.000.000 €</h4>
+            <a href="#">Visita qui</a>
+        </div>
+        <div class="prodotto">
+            <h3>ASTON MARTIN</h3>
+            <img src="https://cdn.motor1.com/images/mgl/40m7o1/s1/aston-martin-db12.webp">
+            <p>Vettura a benzina,</p>
+            <h4>900.000 €</h4>
+            <a href="#">Visita qui</a>
+            
+        </div>
+        <div class="prodotto">
+            <h3>PAGANI</h3>
+            <img src="https://cdn.motor1.com/images/mgl/WmAmL/s1/pagani-zonda-revolucion-getting-road-conversion.jpg">
+            <p>Vettura a benzina,</p>
+            <h4>2.000.000 €</p>
+            <a href="#">Visita qui</a>
+            
+        </div>
+        
+    </div>
+    <div class="feedback">
+        <p>Lascia un feedback qui accanto ></p>
+        <input type="text" placeholder="commenta qui"/>
+    </div>
+   
+    <footer>
+        <h2>CAR SHOP</h2>
+        <p>Pirri ( 09010 ), Via Aldo Moro 169</p>
+        <button onclick="indirizzo();">CAMBIA INDIRIZZO</button>
+    </footer>
+</body>
+
+<script src="./index.js"></script>
+</html>
